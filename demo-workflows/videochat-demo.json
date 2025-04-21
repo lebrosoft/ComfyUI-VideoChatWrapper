@@ -1,0 +1,231 @@
+{
+  "id": "27d542c8-23e2-496b-b3a2-d1fff04dd3e1",
+  "revision": 0,
+  "last_node_id": 4,
+  "last_link_id": 4,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "VCW_ModelLoader",
+      "pos": [
+        -223.1226806640625,
+        -564.9961547851562
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "processor",
+          "type": "PROCESSOR",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VCW_ModelLoader"
+      },
+      "widgets_values": [
+        "VideoChat-R1_7B"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "VCW_LoadVideo",
+      "pos": [
+        -577.40966796875,
+        -409.725830078125
+      ],
+      "size": [
+        403.1999816894531,
+        777.244384765625
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "video_path",
+          "type": "STRING",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VCW_LoadVideo"
+      },
+      "widgets_values": [
+        "video_keeper_@itssluciaf_This_lipstick_is_my_Roman_Empire_It’s_from_@YSL_Beauty_0_5.mp4",
+        "image",
+        {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "video_keeper_@itssluciaf_This_lipstick_is_my_Roman_Empire_It’s_from_@YSL_Beauty_0_5.mp4",
+            "type": "input",
+            "format": "video/mp4"
+          },
+          "muted": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "VCW_VideoSummary",
+      "pos": [
+        -92.13912963867188,
+        -263.7334899902344
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 1
+        },
+        {
+          "name": "processor",
+          "type": "PROCESSOR",
+          "link": 2
+        },
+        {
+          "name": "video_path",
+          "type": "STRING",
+          "widget": {
+            "name": "video_path"
+          },
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VCW_VideoSummary"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 4,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -75.00391387939453,
+        75.54469299316406
+      ],
+      "size": [
+        380.114013671875,
+        204.86764526367188
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "b29ae7f4ff8c76e5b33ff9f394bf04e57e862bb8",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "The video features a person standing indoors, likely in a bathroom or a similar setting, given the visible wooden paneling and shelves with toiletries in the background. The individual is wearing a black sleeveless top and has long, light brown hair that they are adjusting with their hand. The lighting in the room appears to be soft and natural, possibly from a ceiling light source. The person seems to be in motion, possibly dancing or moving rhythmically, as indicated by the slight blur in some frames. The overall atmosphere of the video suggests a casual and relaxed environment."
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "MODEL"
+    ],
+    [
+      2,
+      1,
+      1,
+      2,
+      1,
+      "PROCESSOR"
+    ],
+    [
+      3,
+      3,
+      0,
+      2,
+      2,
+      "STRING"
+    ],
+    [
+      4,
+      2,
+      0,
+      4,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.0610764609500007,
+      "offset": [
+        713.8062098603908,
+        619.6327449435322
+      ]
+    },
+    "ue_links": [],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
