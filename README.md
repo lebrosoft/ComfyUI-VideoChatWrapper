@@ -42,3 +42,8 @@ input:
 output:
 
 - text: The summary of the video
+
+## References
+
+![OpenGVLab/VideoChat-R1_7B](https://huggingface.co/OpenGVLab/VideoChat-R1_7B)
+![ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)
