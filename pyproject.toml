@@ -1,7 +1,7 @@
 [project]
 name = "ComfyUI-VideoChatWrapper"
 description = "Nodes related to video chat workflows"
-version = "1.0.2"
+version = "1.0.3"
 license = { file = "LICENSE" }
 dependencies = ["qwen_vl_utils"]
 
