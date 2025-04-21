@@ -1,5 +1,7 @@
 videochat/server.py
 videochat/logger.py
+private/
+node.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

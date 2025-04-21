@@ -1,7 +1,7 @@
 [project]
-name = "comfyui-videochatwrapper"
+name = "ComfyUI-VideoChatWrapper"
 description = "Nodes related to video chat workflows"
-version = "0.0.1"
+version = "1.0.2"
 license = { file = "LICENSE" }
 dependencies = ["qwen_vl_utils"]
 
@@ -10,6 +10,6 @@ Repository = "https://github.com/lebrosoft/ComfyUI-VideoChatWrapper"
 
 #  Used by Comfy Registry https://comfyregistry.org
 [tool.comfy]
-PublisherId = "lebrosoft"
+PublisherId = "jida-ai"
 DisplayName = "ComfyUI-VideoChatWrapper"
 Icon = ""
