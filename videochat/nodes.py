@@ -173,14 +173,3 @@ class LoadVideoUpload:
         return True
     
 
-NODE_CLASS_MAPPINGS = {
-    "VCW_ModelLoader": ModelLoader,
-    "VCW_VideoSummary": VideoSummary,
-    "VCW_LoadVideo": LoadVideoUpload,
-}
-
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "VCW_ModelLoader": "Load Model (VideoChat)",
-    "VCW_VideoSummary": "Video Summary (VideoChat)",
-    "VCW_LoadVideo": "Load Video (Upload) (VideoChat) ",
-}
